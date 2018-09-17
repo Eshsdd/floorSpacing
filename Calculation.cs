@@ -60,6 +60,7 @@ namespace Test_Server
 
                 } else if (shape == "n")
                 {
+                    //same as above but smaller
                     Console.WriteLine("Okay! Now Give me the Length and Width of your walls!");
                     Console.WriteLine("");
 
@@ -79,6 +80,7 @@ namespace Test_Server
                 }
                 else
                 {
+                    //if not a n/y
                     Console.WriteLine("How about you try that again?");
                     Console.WriteLine("");
                     continue;
@@ -89,6 +91,7 @@ namespace Test_Server
         }
         static void RoomL(int lX, int lY, int wX, int wY)
         {
+            //calculations
             int mathTotal = (lX * wX) - (lY * wY);
             Console.WriteLine("Your total space area " + mathTotal);
 
